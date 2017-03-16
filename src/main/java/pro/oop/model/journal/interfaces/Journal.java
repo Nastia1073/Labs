@@ -5,7 +5,7 @@ import pro.oop.model.book.impls.StudentsBook;
 import pro.oop.model.book.interfaces.IBook;
 import pro.oop.model.clerk.impls.Clerk;
 import pro.oop.model.clerk.interfaces.IClerk;
-import pro.oop.model.client.impls.LibСlient;
+import pro.oop.model.client.impls.ClientLib;
 import pro.oop.model.client.interfaces.IClient;
 import pro.oop.model.journal.impls.IJournal;
 import pro.oop.model.metering.impls.Metering;
@@ -42,9 +42,9 @@ public class Journal implements IJournal {
                 "Non-fiction", "for students","Universe");
 
 
-        IClient vasia = new LibСlient(1, "student", "vasia",
+        IClient vasia = new ClientLib(1, "student", "vasia",
                 true);
-        IClient vania = new LibСlient(2, "student", "vania", false);
+        IClient vania = new ClientLib(2, "student", "vania", false);
 
 
         IClerk bibliotekar = new Clerk (1,2,"ivan");
@@ -107,8 +107,8 @@ public class Journal implements IJournal {
 
     IClerk director = new Clerk(2, 3, "doesn't matter");
 
-    IClient vasia = new LibСlient(1, "student", "vasia", true);
-    IClient vania = new LibСlient(2, "student", "vania", false);
+    IClient vasia = new ClientLib(1, "student", "vasia", true);
+    IClient vania = new ClientLib(2, "student", "vania", false);
 
     Date date = new Date();
 
